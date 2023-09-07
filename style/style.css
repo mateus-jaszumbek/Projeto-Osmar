@@ -28,7 +28,7 @@ text-decoration: none;
   font-size: 1.2em;
   text-decoration: none;
 }
-.uldonav li:hover {
+.uldonav a:hover {
   color: rgba(7, 157, 187, 0.644);
   text-decoration: none;
 }
@@ -60,38 +60,40 @@ text-decoration: none;
 .card-primeiro p {
   font-size: 2.5em;
   font-weight: bold;
+  transition: color 1.2s;
+}
+.card-primeiro p:hover{
+  color: rgba(0, 0, 0, 0.692);
 }
 .traco {
   width: 9px;
   border-radius: 20%;
   margin-top: 1em;
-  margin-left: 44em;
+  margin-left: 30em;
   height: 3.3em;
   background-color: #20CD8D  ;
 }
 .text-h2 {
   color: white;
-  font-size: 3.3em;
+  font-size: 3em;
   font-weight: bold;
   margin: 2em 0 10px 15px;
   letter-spacing: 2.3px;
 }
 .cliqueaqui {
-  color: #C83838;
-  margin-top: 3em;
+  color: #C83838;  
   font-weight: bold;
-  margin-left: 2em;
   font-size: 1.5em;
   transition: color 1s;
-  
 }
-.link-1 {
-  text-decoration: none;
-  list-style-type: none;
+.cliqu{
+  margin-left: 2em;
+  margin-top: 3em;
 }
 .cliqueaqui:hover {
-color: #167f86;
-list-style-type: none;
+color: #169ba5;
+text-decoration: none;
+list-style: none;
 }
 .div-title {
   color: white;
@@ -107,9 +109,6 @@ list-style-type: none;
   height: 50em;
   text-align: center;
 }
-
-
-
 .sectionCard{
  margin-top: 3em;
 }
@@ -141,22 +140,41 @@ letter-spacing: 2px;
   width: 100%;
   margin-top: 1px;
 }
+.h1-section4 {
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 2em;
+  font-weight: bolder;
+}
+.sublinhado {
+  width: 70%;
+  height: 2px;
+  margin: auto;
+  background-color: white;
+}
 .card-icone{
   height: 20em;
-  border: 1px solid white;
-  margin-top: 15em;
+  border: 2px solid white;
+  margin-top: 8em;
   transition: background-color 1s;
   border-radius: 3%;
 }
 .card-icone.card-icone:hover {
   background-color: #1928448c;
 }
-.card-icone > p {
+.card-icone  a {
   color: white;
   text-align: center;
   font-weight: bolder;
   font-size: 2em;
+  transition: color 1s;
 }
+.card-icone a:hover {
+  color: #20CD8D;
+  text-decoration: none;
+}
+
 .card-icone > i {
 margin: 1% 25% 0 25%;
 
