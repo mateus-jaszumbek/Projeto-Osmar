@@ -3,6 +3,21 @@ body{
     padding: 0%;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: black;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #07ffa479;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid black;  /* creates padding around scroll thumb */
 }
 .nav-bar {
   width: 100%;
@@ -86,8 +101,8 @@ text-decoration: none;
   font-size: 1.5em;
   transition: color 1s;
 }
-.cliqu{
-  margin-left: 2em;
+.cliqueaqui p {
+  margin-left: 1.5em;
   margin-top: 3em;
 }
 .cliqueaqui:hover {
@@ -140,7 +155,7 @@ letter-spacing: 2px;
   width: 100%;
   margin-top: 1px;
 }
-.h1-section4 {
+.div-card-section4{
   color: white;
   font-size: 3em;
   text-align: center;
@@ -161,7 +176,7 @@ letter-spacing: 2px;
   border-radius: 3%;
 }
 .card-icone.card-icone:hover {
-  background-color: #1928448c;
+  background-color: #1fabc477;
 }
 .card-icone  a {
   color: white;
@@ -180,7 +195,7 @@ margin: 1% 25% 0 25%;
 
 }
 .div-footer{
-  height: 130px;
+  height: 15em;
   background-color: #172627;  
   margin-top: 1px;
 }
@@ -216,10 +231,20 @@ margin: 1% 25% 0 25%;
 }
 .logo-whatsapp {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 15%;
+  bottom: 30px;
+  right: 0px;
+  width: 4em;
   max-width: 100px; 
+}
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
 }
 
 
