@@ -65,7 +65,7 @@ text-decoration: none;
  width: 19em;
  height: 30em;
  border: 1px solid rgba(0, 0, 0, 0.575);
- border-radius: 10%;
+ border-radius: 10% 0 10% 0;
  margin-top: 3em;
  transition: background 1s;
 }
@@ -148,7 +148,7 @@ letter-spacing: 2px;
   background-color: white; /* Cor da barra */
 }
 .div-section4 {
-  background-image: url("/img/funda_empresa.avif");
+  background-image: url("/img/Empresa_escurecida.png.png");
   background-size: cover; /* Ajusta o tamanho da imagem para cobrir o elemento */
   background-repeat: no-repeat; /* Evita que a imagem seja repetida */
   height: 55em;
@@ -221,6 +221,15 @@ margin: 1% 25% 0 25%;
 }
 .quarto-article ul li a:hover {
   color: #167f86;
+}
+.imagem-seguradoras {
+  text-align: center;
+}
+.imagem-seguradoras img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto;
 }
 .links {
   background-color: #172627;
