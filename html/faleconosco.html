@@ -29,56 +29,153 @@
 
 <body>
     <div class="row">
-        <div class="col-lg-12">  
-            
-            <div class="conatiner">   
+        <div class="col-lg-12">          
 
-                <form action="https://formsubmit.co/ajax/mateusjaszumbek@hotmail.com"
-                method="POST" data-form>
-        
-            <label for="tipoPessoa" style="text-align: center; font-size: 1.3rem;">Você é pessoa Física ou Jurídica: </label>
-            <select id="tipoPessoa">
-              <option value="vazia">Escolha uma opção</option>
-              <option value="fisica">Pessoa Física</option>
-              <option value="juridica">Pessoa Jurídica</option>
-            </select>
-        
-            <div id="nomePessoaFisica" style="display: none;">
-              <label for="nome">Nome:</label>
-              <input type="text" id="nome" placeholder="Digite seu nome">
-            </div>
-        
-            <div id="nomeEmpresa" style="display: none;">
-              <label for="empresa">Nome da Empresa:</label>
-              <input type="text" id="empresa" placeholder="Digite o nome da empresa">
-            </div>
-        
-            <label for="telefone">Telefone:</label>
-            <input type="telefone" id="telefone" maxlength="14" required>
-        
-            <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email" required />
-        
-            <label for="mensagem">Mensagem:</label>
-            <textarea name="mensagem" id="mensagem" required></textarea>
-        
-            <button type="submit" data-button>Enviar</button>
-          </form>
+            <div class="conatiner" id="height-conatiner"> 
+                <div class="row">
+                    <div class="col-lg-12 buttonem-wh" style="text-align: center;">   
+                        <button onclick="openWhatsApp()">
+                            <i class="fa-brands fa-whatsapp" style="font-size: 2rem;"></i>
+                            WhatsApp
+                        </button>
 
+                        <button onclick="showEmailForm()">
+                            <i class="fa-regular fa-envelope" style="font-size: 2rem;"></i>
+                            Email
+                        </button>
+                    </div>
+                </div>         
+
+                <div id="emailForm" style="display: none;">
+                    <form action="https://formsubmit.co/ajax/mateusjaszumbek@hotmail.com" method="POST" data-form class="formulario-paraenvio">
+
+                        <div class="fechamento" >
+                            <a id="close-email" onclick="closeEmail()">
+                                <i class="fa-solid fa-xmark" style="color: #fd0d0d; cursor: pointer; font-size: 1.6rem;"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="row" >
+                            <div class="col-lg-12 drop" >
+                                <div class="droplist">
+                                    <label  for="tipoPessoa" class="label" style="margin-top: 3rem;">
+                                        Você é pessoa Física ou Jurídica: 
+                                    </label>
+                                    <select id="tipoPessoa" class="input">
+                                        <option value="vazia">Escolha uma opção</option>
+                                        <option value="fisica">Pessoa Física</option>
+                                        <option value="juridica">Pessoa Jurídica</option>
+                                    </select>
+                                </div>                                
+
+                                <div id="nomePessoaFisica" >
+                                    <label class="label" for="nome">Nome:</label>
+                                    <input class="input" type="text" name="nome fisico" placeholder="Digite seu nome">
+                                </div>
+   
+                                <div id="nomeEmpresa" style="display: none;">
+                                    <label class="label" for="empresa">Nome da Empresa:</label>
+                                    <input class="input" type="text" name="nome Empresa" id="empresa" placeholder="Digite o nome da empresa">
+                                </div>
+                            </div>
+                        </div>                       
+
+                        <div class="row">
+                            <div class="col-lg-12 input">
+                                <label class="label" for="telefone">Telefone:</label>
+                                <input class="input" type="telefone" name="telefone" id="telefone" maxlength="15" required placeholder="(xx) 9xxxx-xxxx">        
+                            </div>
+                        </div>
+                       
+                        <div class="row">
+                            <div class="col-lg-12 input">
+                                <label class="label" for="email">E-mail:</label><br>
+                                <input class="input" type="email" placeholder="Digite seu E-mail" name="email" id="email" required />
+                            </div>
+                        </div>                       
+
+                        <div class="row">
+                            <div class="col-lg-12 input">
+                                <label class="label" for="mensagem">Mensagem:</label>
+                                <textarea name="mensagem" id="mensagem" required></textarea>
+                            </div>
+                        </div>                      
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <button type="submit" class="enviarformulario" data-button>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/aycieyht.json"
+                                        trigger="hover"
+                                        style="width:35px;height:35px; margin-top: 1rem;">
+                                    </lord-icon>                                    
+                                        Enviar                                   
+                                </button>
+                            </div>
+                        </div>
+                       
+                    </form>
+                </div>
+
+                <script src="https://cdn.lordicon.com/lordicon-1.2.0.js"></script>
                 <script>
-                       const tipoPessoa = document.getElementById('tipoPessoa');
-                        const nomePessoaFisica = document.getElementById('nomePessoaFisica');
-                        const nomeEmpresa = document.getElementById('nomeEmpresa');
+                    function closeEmail() {
+                        document.getElementById('emailForm').style.display = 'none';
+                        var elemento = document.getElementById('height-conatiner');
+                        // Altera o height para 55rem
+                        elemento.style.height = '30rem';
+                    }
+                    
+                    function showEmailForm() {
+                        document.getElementById('emailForm').style.display = 'block';
+                        var elemento = document.getElementById('height-conatiner');
+                        // Altera o height para 55rem
+                        elemento.style.height = '65rem';
+                    }
 
-                        tipoPessoa.addEventListener('change', function() {
+                    function openWhatsApp() {
+                    // Fecha o formulário de e-mail ao abrir o WhatsApp (se estiver aberto)
+                        document.getElementById('emailForm').style.display = 'none';
+
+                    // Abre uma nova guia com o link do WhatsApp
+                    window.open('https://wa.me/5541999929087', '_blank');
+
+                    var elemento = document.getElementById('height-conatiner');
+                        // Altera o height para 55rem
+                        elemento.style.height = '30rem';
+                    }
+
+                    const tipoPessoa = document.getElementById('tipoPessoa');
+                    const nomePessoaFisica = document.getElementById('nomePessoaFisica');
+                    const nomeEmpresa = document.getElementById('nomeEmpresa');
+
+                    tipoPessoa.addEventListener('change', function () {
                         if (tipoPessoa.value === 'fisica') {
                             nomePessoaFisica.style.display = 'block';
                             nomeEmpresa.style.display = 'none';
                         } else if (tipoPessoa.value === 'juridica') {
                             nomePessoaFisica.style.display = 'none';
                             nomeEmpresa.style.display = 'block';
+                        } else if (tipoPessoa.value === 'vazia') {
+                            nomePessoaFisica.style.display = 'none';
+                            nomeEmpresa.style.display = 'none';
                         }
-                        });
+                    });
+
+                    const telefoneInput = document.getElementById('telefone');
+
+                    telefoneInput.addEventListener('input', function () {
+                        let telefone = this.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+                        if (telefone.length > 0) {
+                            telefone = telefone.replace(/^(\d{2})(\d)/g, '($1) $2');
+                            if (telefone.length > 11) {
+                                telefone = telefone.replace(/(\d{5})(\d)/, '$1-$2');
+                            } else {
+                                telefone = telefone.replace(/(\d{4})(\d)/, '$1-$2');
+                            }
+                            this.value = telefone.slice(0, 15); // Limita o tamanho máximo para o formato
+                        }
+                    });
                 </script>
 
             </div>
