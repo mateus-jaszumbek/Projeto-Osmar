@@ -34,12 +34,12 @@
             <div class="conatiner" id="height-conatiner"> 
                 <div class="row">
                     <div class="col-lg-12 buttonem-wh" style="text-align: center;">   
-                        <button onclick="openWhatsApp()">
+                        <button onclick="openWhatsApp()" style="background-color:  #008000; color: white; ">
                             <i class="fa-brands fa-whatsapp" style="font-size: 2rem;"></i>
                             WhatsApp
                         </button>
 
-                        <button onclick="showEmailForm()">
+                        <button onclick="showEmailForm()" style="background-color:  #1d44d8; color: white; ">
                             <i class="fa-regular fa-envelope" style="font-size: 2rem;"></i>
                             Email
                         </button>
@@ -47,7 +47,8 @@
                 </div>         
 
                 <div id="emailForm" style="display: none;">
-                    <form action="https://formsubmit.co/ajax/mateusjaszumbek@hotmail.com" method="POST" data-form class="formulario-paraenvio">
+
+                    <form action="https://formsubmit.co/ajax/mateusjaszumbek@hotmail.com" method="POST" data-form class="formulario-paraenvio" id="myForm">
 
                         <div class="fechamento" >
                             <a id="close-email" onclick="closeEmail()">

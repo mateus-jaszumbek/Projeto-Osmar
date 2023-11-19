@@ -67,5 +67,8 @@ class FormSubmit {
     error: ".error",
   });
 
+  window.onload = function() {
+    document.getElementById('myForm').reset();
+  };
 
   
