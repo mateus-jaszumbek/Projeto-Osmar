@@ -1,151 +1,150 @@
 .navbar {
-    background-color: black;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
-  }
+  background-color: black;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
   
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .logo img {
-    height: 50px; /* Ajuste a altura conforme necessário */
-  }
-  
-  .nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .nav-links li {
-    display: inline;
-    margin-left: 20px;
-  }
-  
-  .nav-links li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 1s;
-  }
-  .nav-links li a:hover {
-    color: rgba(7, 157, 187, 0.644);
-  }
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 50px; /* Ajuste a altura conforme necessário */
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 1s;
+}
+.nav-links li a:hover {
+color: rgba(7, 157, 187, 0.644);
+}
 
 .conatiner {
-    width: 100%;
-    height: 45rem;
-    background-image: url(../img/Empresa_escurecida.png.png);
-    object-fit: cover;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 45rem;
+  background-image: url(../img/Empresa_escurecida.png.png);
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .buttonem-wh button {
-    width: 15rem;
-    padding: 5px;
-    font-size: 2rem;
-    margin: 5rem 5rem 2rem;
-    border-radius: 8px;
-    transition: background-color 1s ease;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-    animation: pulse 2s infinite; /* Adiciona a animação de pulsação */
+  width: 15rem;
+  padding: 5px;
+  font-size: 2rem;
+  margin: 5rem 5rem 2rem;
+  border-radius: 8px;
+  transition: background-color 1s ease;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  animation: pulse 2s infinite; /* Adiciona a animação de pulsação */
 }
 
 @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
   }
 button:hover {
-    background: rgb(6, 245, 165);
+  background: rgb(6, 245, 165);
 }
 .formulario-paraenvio {
-    background-color: white;
-    width: 30rem;
-    margin: auto;
-    height: 53rem;
-    border-radius: 8px;
+  background-color: white;
+  width: 30rem;
+  margin: auto;
+  height: 53rem;
+  border-radius: 8px;
 }
 .fechamento {
-    float: right;
-    margin: 1rem;
+  float: right;
+  margin: 1rem;
 }
 #tipoPessoa {
-    width: 80%; 
-    height: 2.8rem; 
-    text-align: center; 
-    border-radius: 8px; 
-    margin: auto; 
-    display: block;
-    transition: background-color 1s;
+  width: 80%; 
+  height: 2.8rem; 
+  text-align: center; 
+  border-radius: 8px; 
+  margin: auto; 
+  display: block;
+  border: none;
+  border-bottom: solid 1px black;
+  font-weight: bolder;
 }
-#tipoPessoa:hover {
-    background-color: #272a37;
-    color: white;
-} 
 
 .drop input {
-    width: 95%;
-    margin: 0 2rem;
-    height: 2.9rem;
-    display: block;
-    border-radius: 8px;
-    transition: background-color 1s;
-}
-.drop input:hover{
-   background-color: #272a37;
-   color: white;
-}
-.label {
-    font-size: 1.3rem;
-    width: 100%;
-    text-align: center;
-    margin: 1rem;
-}
-.input input {
-    width: 80%;
-    margin: auto;
-    height: 2.9rem;
-    display: block;
-    border-radius: 8px;
-    transition: background-color 1s;
-}
-.input input:hover {
-    background-color: #272a37;
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  height: 2.9rem;
+  display: block;
+  border-radius: 8px;
+  border: none;
+  border-bottom: solid 1px black;
+  font-weight: bolder;
 }
 
+.label {
+  font-size: 1.3rem;
+  width: 100%;
+  text-align: center;
+  margin: 1rem;
+}
+.input input {
+  width: 80%;
+  margin: auto;
+  height: 2.9rem;
+  display: block;
+  border-radius: 8px;
+  border: none;
+  border-bottom: solid 1px black;
+  text-align: center;
+  font-weight: bolder;
+}
 textarea {
-    width: 20rem;
-    margin: auto;
-    height: 7rem;
-    display: block;
+  width: 20rem;
+  margin: auto;
+  height: 9rem;
+  display: block;
+  border-radius: 5px;
+  text-align: center;
 }
 .enviarformulario {
-    width: 40%;
-    margin: 2rem auto;
-    display: block;
-    font-size: 1.4rem;
-    text-align: center;
-    border: none;
-    background-color: inherit;
-    transition: color 0.8s;
+  width: 40%;
+  margin: 1rem auto;
+  display: block;
+  font-size: 1.4rem;
+  text-align: center;
+  border: none;
+  background-color: inherit;
+  transition: color 0.8s;
 }
 .enviarformulario:hover {
-    background-color: inherit;
-    color:   #17a3a8;
+  background-color: inherit;
+  color:   #17a3a8;
 }
