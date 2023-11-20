@@ -39,10 +39,15 @@
   }
 
 .conatiner {
-    background-color: #323644;
     width: 100%;
     height: 45rem;
+    background-image: url(../img/Empresa_escurecida.png.png);
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+
 }
+
 .buttonem-wh button {
     width: 15rem;
     padding: 5px;
@@ -73,7 +78,7 @@ button:hover {
     background-color: white;
     width: 30rem;
     margin: auto;
-    height: 50rem;
+    height: 53rem;
     border-radius: 8px;
 }
 .fechamento {
@@ -121,9 +126,7 @@ button:hover {
     transition: background-color 1s;
 }
 .input input:hover {
-    background: #272a37;
-    color: white;
-    border: solid 2px white;
+    background-color: #272a37;
 }
 
 textarea {
