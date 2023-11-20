@@ -141,6 +141,11 @@ textarea {
     display: block;
     font-size: 1.4rem;
     text-align: center;
-    border-radius: 8px;
-    text-align: center;
+    border: none;
+    background-color: inherit;
+    transition: color 0.8s;
+}
+.enviarformulario:hover {
+    background-color: inherit;
+    color:   #17a3a8;
 }

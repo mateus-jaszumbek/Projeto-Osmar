@@ -241,9 +241,7 @@ margin: 1% 25% 0 25%;
 .logo-whatsapp {
   position: fixed;
   bottom: 30px;
-  right: 0px;
-  width: 4em;
-  max-width: 100px; 
+  left: 0;
 }
 
 
@@ -270,4 +268,29 @@ margin: 1% 25% 0 25%;
   margin: 5px;
 }
 
+.seta-cima,
+.seta-baixo {
+  position: fixed;
+  right: 10px; /* Ajusta a distância da borda direita */
+  font-size: 3rem;
+  cursor: pointer;
+  z-index: 999; /* Garante que as setas fiquem sobre o conteúdo */
+}
+
+.seta-cima a,
+.seta-baixo a {
+  text-decoration: none;
+  color: white;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.534);
+  border-radius: 50%;
+}
+
+.seta-cima {
+  top: 23rem; /* Ajusta a distância do topo */
+}
+
+.seta-baixo {
+  bottom: 11rem; /* Ajusta a distância do rodapé */
+}
 
