@@ -62,10 +62,10 @@ color: rgba(7, 157, 187, 0.644);
   transition: background-color 1s ease;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
-  animation: pulse 2s infinite; /* Adiciona a animação de pulsação */
+  animation: test 2s infinite; /* Adiciona a animação de pulsação */
 }
 
-@keyframes pulse {
+@keyframes test {
   0% {
     transform: scale(1);
   }
