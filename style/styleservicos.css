@@ -1,0 +1,153 @@
+body {
+    padding: 0 ;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.imagem-banner-servico {
+  width: 100%; 
+  height: 100vh;
+  
+}
+.seguro-servico-principal{
+    height: 80vh;
+    background-color: #eaeaea;
+}
+.col-formulario {
+    background-color: #eaeaea;
+}
+.title-seguros{
+    width: 80%;
+    font-size: 2.3rem;
+    margin: 5rem auto 1rem; 
+}
+.paragraph-seguros {
+    width: 80%;
+    margin:  1rem auto ; 
+    font-size: 1.1rem;
+}
+form {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.933);
+    width: 39%;
+    position: absolute;
+    top: 22rem;
+  }
+
+  .title-formulario {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+  }
+
+  .paragraph-formulario {
+    text-align: center;
+    color: #666;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(22, 103, 22, 0.775);
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  .coluna-verde-facilidade {
+    height: 35vh;
+    color: white;
+    background-color: rgba(22, 103, 22, 0.775);
+  }
+
+  .coluna-segunda-verde-facilidade {
+    height: 35vh;
+    background-color: rgba(22, 103, 22, 0.775);
+    color: white;
+  }
+
+  .title-facilidade {
+    width: 50%;
+    margin: 24% auto;
+    font-size: 1.4rem;
+  }
+
+  .paragraph-facilidade {
+    font-size: 1.2rem;
+    width: 80%;
+    margin: 6% auto;
+  }
+  .mais-vantagens {
+    text-align: center;    
+    
+  }
+
+  .section-mais-vantagens {
+    width: 100%;
+    height: 110vh;
+    background-color: #eaeaea;
+  }
+
+  .border-vatangens {
+    border: solid 1px rgba(0, 0, 0, 0.108);
+    border-radius: 8px;
+    background-color: #10cf9ce8;
+  }
+  .section-mais-vantagens p {
+    margin-left: 2rem;
+    color: #079871;
+  }
+  .title-mais-vantagens {
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 2.4rem;
+    color: #079871;
+  }
+  .section-mais-vantagens h4 {
+    margin-left: 2rem;
+    font-size: 2.4rem;
+    color: #079871;
+  }
+  .section-veja-mais {
+    text-align: center;
+    height: 100vh;
+  }
+  .section-veja-mais h4 {
+    color: #079871;
+    font-size: 1.9rem;
+  }
+.title-veja-mais {
+    margin: 5rem auto 1rem;
+    font-size: 2.6rem;
+    color: #079871;
+}
+.paragraph-veja-mais {
+    margin-bottom: 5rem;
+}
+.mb-4 {
+    margin-bottom: 5rem!important;
+}
+.paragrafo-assistencia {
+    color: #079871;
+    font-size: 1.1rem;
+}

@@ -1,169 +1,200 @@
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
-.navbar {
-    background-color: black;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
-    height: 5rem;
-  }
-    
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .logo img {
-    height: 60px; /* Ajuste a altura conforme necessário */
-  }
-  
-  .nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .nav-links li {
-    display: inline;
-    margin-left: 20px;
-  }
-  
-  .nav-links li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 1s;
-  }
-  .nav-links li a:hover {
-  color: rgba(7, 157, 187, 0.644);
-  }
-  .section-imagem {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .texto-obreimagem {
-    width: 100%;
-    height: 100%;
-    background-image: url('../img/familia-perfeita-escurecida.png');
-    background-size: cover;
-    background-position: center;
-    position: relative; /* Permite posicionar o texto em relação ao contêiner */
-    color: #fff; /* Cor do texto */
-    text-align: center; /* Centraliza o texto horizontalmente */
-    padding: 20px; /* Espaçamento interno para o texto */
-  }
-  .conheca {
-    font-size: 1.3em; /* Tamanho do parágrafo */
-    font-weight: bolder;
-    margin-top: 4.6rem;
-    justify-content: center;
-  }
-  .title {
-    font-size: 5rem;
-    width: 50%;
-    margin: 6rem auto 3rem;
-    font-weight: bolder;
-  }
-  .veja {
-    font-size: 2rem;
-    width: 30%;
-    margin: auto;
-    font-weight: bolder;
-  }
-  .clique{
-    border: solid 1px black;
-    width: 13%;
-    height: 5vh;
-    font-size: 1.2rem;
-    font-weight: bolder;
-    background-color: rgb(18, 22, 22);
-    padding: 5px;
-    margin: 2rem auto;
-    border-radius: 5px;
-    transition: background 1s;
-  }
-  .clique:hover {
-    background-color: rgba(9, 192, 192, 0.801);
-    border: solid 1px white;
-    box-shadow: 5px 5px 5px black;
-  }
-  .nossos {
-    color: rgba(11, 206, 11, 0.822);
-    font-weight: bolder;
-    font-size: 4rem;
-    width: 30%;
-    margin: 5rem 8rem;
-  }
-  .section-saibamais {
-    height: 90vh;
-  }
-  .border-section-conheca {
-    border: solid 2px rgba(11, 206, 11, 0.822);
-    width: 80vh;
-    height: 20vh;
-    margin: auto;
-    margin-top: 2.4rem;
-    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.63);
-  }
-  .border-section-conheca p {
-    font-weight: bolder;
-    font-size: 2rem;
-    width: 30%;
-    margin: 3vh;
-    color: rgba(11, 206, 11, 0.822);
-  }
-  .border-section-conheca a {
-    font-weight: bolder;
-    display: flex;
-    margin-top: 8vh;
-    margin-left: 19vh;
-    color: rgba(11, 206, 11, 0.822);
-    text-decoration: none;
-  }
-  .border-section-conheca a:hover {
-    text-decoration: underline;
-  }
-  .section-imagem-quemsomos {
-    height: 90vh;
-    width: 100%;
-    background-color: #f0f0f0;
-  }
-  .section-imagem-quemsomos img {
-    height: 90vh;
-    width: 103%;
-  }
 
-  .seguro-nossa {
-    font-weight: bolder;
-    font-size: 2.4rem;
-    margin: 5rem 8rem;
-  }
+.navbar {
+  background-color: black;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 60px;
+  /* Ajuste a altura conforme necessário */
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 1s;
+}
+
+.nav-links li a:hover {
+  color: rgba(7, 157, 187, 0.644);
+}
+
+.section-imagem {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-obreimagem {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/familia-perfeita-escurecida.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  /* Permite posicionar o texto em relação ao contêiner */
+  color: #fff;
+  /* Cor do texto */
+  text-align: center;
+  /* Centraliza o texto horizontalmente */
+  padding: 20px;
+  /* Espaçamento interno para o texto */
+}
+
+.conheca {
+  font-size: 1.3em;
+  /* Tamanho do parágrafo */
+  font-weight: bolder;
+  margin-top: 4.6rem;
+  justify-content: center;
+}
+
+.title {
+  font-size: 5rem;
+  width: 50%;
+  margin: 6rem auto 3rem;
+  font-weight: bolder;
+}
+
+.veja {
+  font-size: 2rem;
+  width: 30%;
+  margin: auto;
+  font-weight: bolder;
+}
+
+.clique {
+  border: solid 1px black;
+  width: 13%;
+  height: 5vh;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  background-color: rgb(18, 22, 22);
+  padding: 5px;
+  margin: 2rem auto;
+  border-radius: 5px;
+  transition: background 1s;
+}
+
+.clique:hover {
+  background-color: rgba(9, 192, 192, 0.801);
+  border: solid 1px white;
+  box-shadow: 5px 5px 5px black;
+}
+
+.nossos {
+  color: rgba(11, 206, 11, 0.822);
+  font-weight: bolder;
+  font-size: 4rem;
+  width: 30%;
+  margin: 5rem 8rem;
+}
+
+.section-saibamais {
+  height: 90vh;
+}
+
+.border-section-conheca {
+  border: solid 2px rgba(11, 206, 11, 0.822);
+  width: 80vh;
+  height: 20vh;
+  margin: auto;
+  margin-top: 2.4rem;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.63);
+}
+
+.border-section-conheca p {
+  font-weight: bolder;
+  font-size: 2rem;
+  width: 30%;
+  margin: 3vh;
+  color: rgba(11, 206, 11, 0.822);
+}
+
+.border-section-conheca a {
+  font-weight: bolder;
+  display: flex;
+  margin-top: 8vh;
+  margin-left: 19vh;
+  color: rgba(11, 206, 11, 0.822);
+  text-decoration: none;
+}
+
+.border-section-conheca a:hover {
+  text-decoration: underline;
+}
+
+.section-imagem-quemsomos {
+  height: 90vh;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+
+.section-imagem-quemsomos img {
+  height: 90vh;
+  width: 103%;
+}
+
+.seguro-nossa {
+  font-weight: bolder;
+  font-size: 2.4rem;
+  margin: 5rem 8rem;
+}
+
 .quem-e-brs {
-    text-align: center;
-    font-size: 1.4rem;
+  text-align: center;
+  font-size: 1.4rem;
 }
+
 .lorem-lorem {
-    text-align: center;
-    width: 70%;
-    margin: auto;
+  text-align: center;
+  width: 70%;
+  margin: auto;
 }
+
 .bottozinho {
-    border: solid 1px black;
-    width: 24%;
-    margin: 10% 15%;
-    text-align: center;
-    padding: 2%;
-    font-size: 1.2rem;
-    transition: background-color 1s;
-    box-shadow: 5px 5px 5px black;
+  border: solid 1px black;
+  width: 24%;
+  margin: 10% 15%;
+  text-align: center;
+  padding: 2%;
+  font-size: 1.2rem;
+  transition: background-color 1s;
+  box-shadow: 5px 5px 5px black;
 }
+
 .bottozinho:hover {
-background-color: rgba(22, 224, 157, 0.781);
+  background-color: rgba(22, 224, 157, 0.781);
 }

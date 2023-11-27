@@ -2,6 +2,10 @@
   background-color: black;
   border-bottom: 1px solid #ddd;
   padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
 }
   
 .container {
@@ -11,6 +15,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  
 }
 
 .logo img {
