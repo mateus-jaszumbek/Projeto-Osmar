@@ -167,3 +167,6 @@ input[type="submit"]:hover {
   color: #079871;
   font-size: 1.1rem;
 }
+.section-mais-beneficios p{
+  width: 90%;
+}
