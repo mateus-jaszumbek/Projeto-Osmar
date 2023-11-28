@@ -170,3 +170,21 @@ input[type="submit"]:hover {
 .section-mais-beneficios p{
   width: 90%;
 }
+.border-beneficios {
+  border: solid 4px #079871;
+  width: 26%;
+  height: 57vh;
+  border-radius: 5rem 0 5rem 0 ;
+  margin: 0 2rem 0 3rem;
+}
+.border-beneficios  img {
+  margin-left: 5rem;
+
+}
+.border-beneficios  h4 {
+  color: #079871;
+  text-align: center;
+}
+.border-beneficios  p{
+  text-align: center;
+}

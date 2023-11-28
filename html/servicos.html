@@ -124,7 +124,7 @@
                                     <input type="text" name="ModeloVeiculo" placeholder="Modelo do Veiculo" required>
                                 </div>
                                 <div class="col-lg-4">
-                                    <input type="date" name="AnoVeiculo" placeholder="Ano do Veiculo" required style="padding: 10px; border-radius: 5px;">
+                                    <input type="text" name="AnoVeiculo" id="apenasNumeros" placeholder="Ano do Veiculo" required maxlength="4" >
                                 </div>
                             </div>
                             
@@ -135,6 +135,15 @@
             </div>
 
             <script>
+
+                document.getElementById('apenasNumeros').addEventListener('keypress', function(event) {
+                    const key = event.key;
+                    const isNumber = /^[0-9]$/i.test(key);
+
+                    if (!isNumber) {
+                        event.preventDefault();
+                    }
+                });
 
                 document.getElementById('cep').addEventListener('input', function() {
                     let cep = this.value.replace(/\D/g, '');
@@ -296,7 +305,7 @@
                 <div class="container mt-4">
                     <div class="row">
 
-                        <div class="col-lg-3">
+                        <div class="col-lg-4 border-beneficios">
                             <img src="../img/icon/key-card.gif" alt="" style="width: 120px; height: 120px;">
                             <h4>Chaveiro</h4>                          
                             <p>
@@ -304,7 +313,7 @@
                             </p>
                         </div>
 
-                        <div class="col-lg-3">
+                        <div class="col-lg-4 border-beneficios">
                             <img src="../img/icon/gear.gif" style="width: 120px; height: 120px;" alt="">
                             <h4>Troca de Pneu</h4>                           
                             <p>
@@ -312,22 +321,12 @@
                             </p>
                         </div>
 
-                        <div class="col-lg-3">
+                        <div class="col-lg-4 border-beneficios">
                             <img src="../img/icon/crane-truck.gif" alt="" style="width: 120px; height: 120px;">
                             <h4>Reboque</h4>
                             <p class="paragrafo-assistencia">(Quando for impossível reparo no local)</p>
                             <p>
                                 Caso ocorra pane ou avaria/acidente, que não permita reparo no local, a Central de Assistência providenciará o reboque para a oficina mais próxima do local.
-                            </p>
-                        </div>
-
-                        <div class="col-lg-3">
-                            <img src="../img/icon/helicopter.gif" style="width: 120px; height: 120px;" alt="">
-                            <h4>Transporte até residência</h4>
-                            <p class="paragrafo-assistencia">(Em caso de Roubo/furto do veículo)</p>
-                            <p>
-                                Caso seu veículo seja roubado ou furtado, será providenciado o transporte ao motorista e
-                                seus acompanhantes até sua residência.
                             </p>
                         </div>
 
