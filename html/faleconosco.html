@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    <div class="row conatiner-imagem-fundo" >
+    <div class="row conatiner-imagem-fundo">
         <div class="col-lg-12">
 
             <div id="topo"></div>
@@ -47,108 +47,113 @@
                     </ul>
                 </div>
             </nav>
-<div class="image">
-            <div class="conatiner" id="height-conatiner">
-                <div class="row">
-                    <h1 style="margin: 5rem auto; color: white; width: 75%;">Envie-nos uma mensagem pelo WhatsApp ou pelo nosso
-                        E-mail.</h1>
+            <div class="image">
+                <div class="conatiner" id="height-conatiner">
+                    <div class="row">
+                        <h1 style="margin: 5rem auto; color: white; width: 75%;">Envie-nos uma mensagem pelo WhatsApp ou
+                            pelo nosso
+                            E-mail.</h1>
 
-                    <div class="col-lg-12 buttonem-wh" style="text-align: center;">
-                        <button onclick="openWhatsApp()" style="background-color:  #008000; color: white; ">
-                            <i class="fa-brands fa-whatsapp" style="font-size: 2rem;"></i>
-                            WhatsApp
-                        </button>
+                        <div class="col-lg-12 buttonem-wh" style="text-align: center;">
+                            <button onclick="openWhatsApp()" style="background-color:  #008000; color: white; ">
+                                <i class="fa-brands fa-whatsapp" style="font-size: 2rem;"></i>
+                                WhatsApp
+                            </button>
 
-                        <button onclick="showEmailForm()" style="background-color:  #1d44d8; color: white; ">
-                            <i class="fa-regular fa-envelope" style="font-size: 2rem;"></i>
-                            Email
-                        </button>
+                            <button onclick="showEmailForm()" style="background-color:  #1d44d8; color: white; ">
+                                <i class="fa-regular fa-envelope" style="font-size: 2rem;"></i>
+                                Email
+                            </button>
+                        </div>
                     </div>
-                </div>
 
-                <div id="emailForm" style="display: none;">
+                    <div id="emailForm" style="display: none;">
+                        <form action="https://formsubmit.co/ajax/mateusjaszumbek@hotmail.com" method="POST" data-form
+                            class="formulario-paraenvio" id="myForm">
+                            <div class="fechamento">
+                                <a id="close-email" onclick="closeEmail()">
+                                    <i class="fa-solid fa-xmark"
+                                        style="color: #fd0d0d; cursor: pointer; font-size: 1.6rem;"></i>
+                                </a>
+                            </div>
+                            <h3 class="title-formulario">Faça sua cotação agora!</h3>
+                            <p class="paragraph-formulario">Queremos te conhecer um pouco, preencha os campos abaixo e em breve retornaremos</p>
 
-                    <form action="https://formsubmit.co/ajax/mateusjaszumbek@hotmail.com" method="POST" data-form
-                        class="formulario-paraenvio" id="myForm">
+                            <input type="text" name="nome completo" placeholder="Nome completo" required>
+                            <input type="text" name="profissao" placeholder="Profissão" required>
+                            <input type="email" name="email" placeholder="E-mail" required>
 
-                        <div class="fechamento">
-                            <a id="close-email" onclick="closeEmail()">
-                                <i class="fa-solid fa-xmark"
-                                    style="color: #fd0d0d; cursor: pointer; font-size: 1.6rem;"></i>
-                            </a>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-lg-12 drop">
-                                <div class="droplist">
-                                    <label for="tipoPessoa" class="label" style="margin-top: 3rem;">
-                                        Você é pessoa Física ou Jurídica:
-                                    </label>
-                                    <select id="tipoPessoa" class="input">
-                                        <option value="vazia"> Escolha uma opção</option>
-                                        <option value="fisica"> Pessoa Física</option>
-                                        <option value="juridica"> Pessoa Jurídica</option>
-                                    </select>
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <input type="text" style="width: 100%;"  name="celular" id="celular" placeholder="celular">
                                 </div>
-
-                                <div id="nomePessoaFisica">
-                                    <label class="label" for="nome"> Nome:</label>
-                                    <input class="input" style="width: 17rem;" type="text" name="nome fisico" placeholder="Digite seu nome">
-                                </div>
-
-                                <div id="nomeEmpresa" style="display: none;">
-                                    <label class="label" for="empresa"> Nome da Empresa:</label>
-                                    <input class="input" style="width: 17rem;" type="text" name="nome Empresa" id="empresa"
-                                        placeholder="Digite o nome da empresa">
+                                <div class="col-lg-5">
+                                    <input type="text" style="width: 100%;"  id="telefone" name="telefone" placeholder="Telefone">
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-lg-12 input">
-                                <label class="label" for="telefone"> Telefone:</label>
-                                <input class="input" style="width: 12rem;" type="telefone" name="telefone" id="telefone" maxlength="15"
-                                    required placeholder=" (xx) 9xxxx-xxxx">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <input style="width: 100%;" name="cep" type="text" id="cep" placeholder="CEP" required>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input style="width: 100%;" name="logradouro" type="text" id="logradouro" placeholder="Logradouro">
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="text" id="numero" name="numero" placeholder="Número" required>
+                                </div>
+                            </div>                     
+                            
+                            <input type="text" id="bairro" name="bairro" placeholder="Bairro">
+
+                            <div class="row">
+                                <div class="col-lg-2" >
+                                    <input style="width: 100%;" type="text" name="estado" id="estado" placeholder="Estado">
+                                </div>
+                                <div class="col-lg-5">
+                                    <input type="text" id="cidade" name="cidade" placeholder="Cidade">
+                                </div>
+                                <div class="col-lg-5">
+                                    <input type="text" id="complemento" name="complemento" placeholder="Complemento">
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-lg-12 input">
-                                <label class="label" for="email"> E-mail:</label><br>
-                                <input class="input" style="width: 17rem;" type="email" placeholder="Digite seu E-mail" name="email"
-                                    id="email" required />
+                            <input type="text" name="qual_seguro_deseja" placeholder="Qual Seguro Deseja fazer ?" required>
+                            <div class="row">
+                                <div class="col-lg-12 input">
+                                    <textarea style="resize: none;"
+                                        placeholder="Digite uma mensagem de como nos podemos te ajudar ou informações sobre qual seguro deseja, que logo vamos te atender."
+                                        name="mensagem" id="mensagem" required></textarea>
+                                </div>
                             </div>
-                        </div>
 
-                        
-                        <div class="row">
-                            <div class="col-lg-12 input">
-                                <label class="label" for="seguro"> Qual seguro desejado: </label><br>
-                                <input class="input" type="seguro" placeholder="Digite qual seguro deseja ser cotado" name="seguro"
-                                    id="seguro" required />
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-lg-12 input">
-                                <label class="label" for="mensagem"> Mensagem:</label>
-                                <textarea style="resize: none;" placeholder="Digite uma mensagem de como nos podemos te ajudar ou informações sobre qual seguro deseja, que logo vamos te atender." name="mensagem" id="mensagem" required></textarea>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <button type="submit" class="enviarformulario" data-button>                                    
-                                        E n v i a r
-                                </button>
-                            </div>
-                        </div>
-
-                    </form>
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </div>
                 </div>
 
                 <script src="https://cdn.lordicon.com/lordicon-1.2.0.js"></script>
                 <script>
+
+                    document.getElementById('cep').addEventListener('input', function() {
+                        let cep = this.value.replace(/\D/g, '');
+                        if (cep.length > 8) {
+                            cep = cep.slice(0, 8);
+                        }
+                        this.value = cep.replace(/^(\d{5})(\d{3})/, '$1-$2');
+                        
+                        if (cep.length === 8) {
+                            fetch(`https://viacep.com.br/ws/${cep}/json/`)
+                                .then(response => response.json())
+                                .then(data => {
+                                    document.getElementById('logradouro').value = data.logradouro || '';
+                                    document.getElementById('bairro').value = data.bairro || '';
+                                    document.getElementById('cidade').value = data.localidade || '';
+                                    document.getElementById('estado').value = data.uf || '';
+                                })
+                                .catch(error => console.log('Erro:', error));
+                        }
+                    });
+
                     function closeEmail() {
                         document.getElementById('emailForm').style.display = 'none';
                         var elemento = document.getElementById('height-conatiner');
@@ -175,39 +180,6 @@
                         elemento.style.height = '30rem';
                     }
 
-                    const tipoPessoa = document.getElementById('tipoPessoa');
-                    const nomePessoaFisica = document.getElementById('nomePessoaFisica');
-                    const nomeEmpresa = document.getElementById('nomeEmpresa');
-
-                    // Definindo 'fisica' como o valor padrão
-                    tipoPessoa.value = 'vazia';
-
-                    // Colocando a lógica do evento 'change'
-                    tipoPessoa.addEventListener('change', function () {
-                        if (tipoPessoa.value === 'vazia') {
-                            nomePessoaFisica.style.display = 'none';
-                            nomeEmpresa.style.display = 'none';
-                        } else if (tipoPessoa.value === 'fisica') {
-                            nomePessoaFisica.style.display = 'block';
-                            nomeEmpresa.style.display = 'none';
-                        } else if (tipoPessoa.value === 'juridica') {
-                            nomePessoaFisica.style.display = 'none';
-                            nomeEmpresa.style.display = 'block';
-                        }
-                    });
-
-                    // Inicializando a visibilidade de acordo com o valor inicial
-                    if (tipoPessoa.value === 'fisica') {
-                        nomePessoaFisica.style.display = 'block';
-                        nomeEmpresa.style.display = 'none';
-                    } else if (tipoPessoa.value === 'juridica') {
-                        nomePessoaFisica.style.display = 'none';
-                        nomeEmpresa.style.display = 'block';
-                    } else {
-                        nomePessoaFisica.style.display = 'none';
-                        nomeEmpresa.style.display = 'none';
-                    }
-
                     const telefoneInput = document.getElementById('telefone');
 
                     telefoneInput.addEventListener('input', function () {
@@ -222,11 +194,26 @@
                             this.value = telefone.slice(0, 15); // Limita o tamanho máximo para o formato
                         }
                     });
+
+                    const celularInput = document.getElementById('celular');
+
+                    celularInput.addEventListener('input', function () {
+                        let celular = this.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+                        if (celular.length > 0) {
+                            celular = celular.replace(/^(\d{2})(\d)/g, '($1) $2');
+                            if (celular.length > 11) {
+                                celular = celular.replace(/(\d{5})(\d)/, '$1-$2');
+                            } else {
+                                celular = celular.replace(/(\d{4})(\d)/, '$1-$2');
+                            }
+                            this.value = celular.slice(0, 15); // Limita o tamanho máximo para o formato
+                        }
+                    });
                 </script>
 
             </div>
-</div>
         </div>
+    </div>
     </div>
 
 
@@ -295,7 +282,7 @@
 
     </div>
 
-    
+
     <div class="seta-cima">
         <a href="#topo">
             <i class="fa-solid fa-arrow-up"></i>

@@ -79,77 +79,60 @@ color: rgba(7, 157, 187, 0.644);
 button:hover {
   background: rgb(6, 245, 165);
 }
-.formulario-paraenvio {
-  background-color: white;
-  width: 30rem;
+form {
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.933);
+  width: 39%;
   margin: auto;
-  height: 53rem;
-  border-radius: 8px;
-}
-.fechamento {
-  float: right;
-  margin: 1rem;
-}
-#tipoPessoa {
-  width: 80%; 
-  height: 2.8rem; 
-  text-align: center; 
-  border-radius: 8px; 
-  margin: auto; 
-  display: block;
-  border: none;
-  border-bottom: solid 1px black;
-  font-weight: bolder;
 }
 
-.drop input {
-  width: 95%;
-  margin: auto;
+.title-formulario {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
   text-align: center;
-  height: 2.9rem;
-  display: block;
-  border-radius: 8px;
-  border: none;
-  border-bottom: solid 1px black;
-  font-weight: bolder;
 }
 
-.label {
-  font-size: 1.3rem;
+.paragraph-formulario {
+  text-align: center;
+  color: #666;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+input[type="submit"] {
   width: 100%;
-  text-align: center;
-  margin: 1rem;
-}
-.input input {
-  width: 80%;
-  margin: auto;
-  height: 2.9rem;
-  display: block;
-  border-radius: 8px;
+  padding: 10px;
   border: none;
-  border-bottom: solid 1px black;
-  text-align: center;
-  font-weight: bolder;
+  border-radius: 5px;
+  background-color: rgba(22, 141, 220, 0.775);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.section-veja-mais {
+  height: 120vh;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
 }
 textarea {
   width: 20rem;
-  margin: auto;
+  margin:  2rem auto;
   height: 9rem;
   display: block;
   border-radius: 5px;
   text-align: center;
-}
-.enviarformulario {
-  width: 40%;
-  margin: 1rem auto;
-  display: block;
-  font-size: 1.4rem;
-  text-align: center;
-  border: none;
-  background-color: inherit;
-  transition: color 0.8s;
-}
-.enviarformulario:hover {
-  background-color: inherit;
-  color:   #17a3a8;
 }

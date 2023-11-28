@@ -1,0 +1,106 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .imagem-banner-servico {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .seguro-servico-principal {
+    height: 80vh;
+    background-color: #eaeaea;
+  }
+  
+  .col-formulario {
+    background-color: #eaeaea;
+  }
+  
+  .title-seguros {
+    width: 80%;
+    color: rgba(202, 12, 12, 0.781);
+    font-size: 2.3rem;
+    margin: 5rem auto 1rem;
+  }
+  
+  .paragraph-seguros {
+    width: 80%;
+    margin: 1rem auto;
+    font-size: 1.1rem;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.933);
+    width: 39%;
+    position: absolute;
+    top: 22rem;
+  }
+  
+  .title-formulario {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .paragraph-formulario {
+    text-align: center;
+    color: #666;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(212, 21, 21, 0.775);
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  .title-mais-beneficio {
+    margin: 6rem 0 10rem 10rem;
+    font-size: 2.4rem;
+    color: rgba(212, 21, 21, 0.775);
+  }
+  .section-veja-mais {
+    height: 120vh;
+  }
+  .section-veja-mais h4 {
+    color: rgba(212, 21, 21, 0.775);
+    width: 70%;
+
+  }
+  .section-veja-mais p {
+    width: 60%;
+  }
+  .border-beneficios {
+    border: solid 4px red ;
+    width: 25%;
+    height: 48vh;
+    border-radius: 5rem 0 5rem 0 ;
+    margin: 0 3rem 0 3rem;
+  }
+
+ 
+
