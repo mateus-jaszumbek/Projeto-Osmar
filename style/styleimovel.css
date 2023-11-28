@@ -10,7 +10,7 @@ body {
   }
   
   .seguro-servico-principal {
-    height: 80vh;
+    height: 60vh;
     background-color: #eaeaea;
   }
   
@@ -75,14 +75,14 @@ body {
     transition: background-color 0.3s ease;
   }
   .section-veja-mais {
-    height: 120vh;
+    height: 110vh;
   }
   
   input[type="submit"]:hover {
     background-color: #0056b3;
   }
   .title-mais-beneficio {
-    margin: 6rem 0 10rem 10rem;
+    margin: 6rem 0 7rem 10rem;
     font-size: 2.4rem;
     color: rgba(22, 141, 220, 0.775);
   }

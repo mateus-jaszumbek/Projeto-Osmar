@@ -77,7 +77,7 @@ body::-webkit-scrollbar-thumb {
   width: 19em;
   height: 30em;
   border: 1px solid rgba(0, 0, 0, 0.575);
-  border-radius: 10% 0 10% 0;
+  border-radius: 5rem 0 5rem 0;
   margin-top: 3em;
   transition: background 1s;
 }

@@ -74,21 +74,103 @@
                     <div class="formulário ">
                         <form action="https://formsubmit.co/ajax/mateusjaszumbek@hotmail.com" method="POST" data-form
                         class="formulario-paraenvio" id="myForm">
-                            <h3 class="title-formulario">Faça sua cotação agora!</h3>
-                            <p class="paragraph-formulario">Preencha os campos abaixo e em breve retornaremos</p>
+                        <input type="text" name="nome completo" placeholder="Nome completo" required>
+                        <input type="text" name="profissao" placeholder="Profissão" required>
+                        <input type="email" name="email" placeholder="E-mail" required>
 
-                            <input type="text" name="nome completo" placeholder="Nome completo" required>
-                            <input type="email" name="email" placeholder="E-mail" required>
-                            <input type="text" name="celular" placeholder="celular">
-                            <input type="text" name="telefone" placeholder="Telefone">
-                            <input type="text" name="profissao" placeholder="Qual sua Profissão" required>
-                            <input type="text" name="C.E.P" placeholder="Coloque seu C.E.P" required>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <input type="text" style="width: 100%;"  name="celular" id="celular" placeholder="celular">
+                            </div>
+                            <div class="col-lg-5">
+                                <input type="text" style="width: 100%;"  id="telefone" name="telefone" placeholder="Telefone">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <input style="width: 100%;" name="cep" type="text" id="cep" placeholder="CEP" required>
+                            </div>
+                            <div class="col-lg-6">
+                                <input style="width: 100%;" name="logradouro" type="text" id="logradouro" placeholder="Logradouro">
+                            </div>
+                            <div class="col-lg-3">
+                                <input type="text" id="numero" name="numero" placeholder="Número" required>
+                            </div>
+                        </div>                     
+                        
+                        <input type="text" id="bairro" name="bairro" placeholder="Bairro">
+
+                        <div class="row">
+                            <div class="col-lg-2" >
+                                <input style="width: 100%;" type="text" name="estado" id="estado" placeholder="Estado">
+                            </div>
+                            <div class="col-lg-5">
+                                <input type="text" id="cidade" name="cidade" placeholder="Cidade">
+                            </div>
+                            <div class="col-lg-5">
+                                <input type="text" id="complemento" name="complemento" placeholder="Complemento">
+                            </div>
+                        </div>
 
                             <input type="submit" value="Enviar">
                         </form>
                     </div>
                 </div>
             </div>
+
+            <script>
+
+                document.getElementById('cep').addEventListener('input', function() {
+                    let cep = this.value.replace(/\D/g, '');
+                    if (cep.length > 8) {
+                        cep = cep.slice(0, 8);
+                    }
+                    this.value = cep.replace(/^(\d{5})(\d{3})/, '$1-$2');
+                    
+                    if (cep.length === 8) {
+                        fetch(`https://viacep.com.br/ws/${cep}/json/`)
+                            .then(response => response.json())
+                            .then(data => {
+                                document.getElementById('logradouro').value = data.logradouro || '';
+                                document.getElementById('bairro').value = data.bairro || '';
+                                document.getElementById('cidade').value = data.localidade || '';
+                                document.getElementById('estado').value = data.uf || '';
+                            })
+                            .catch(error => console.log('Erro:', error));
+                    }
+                });
+
+                const telefoneInput = document.getElementById('telefone');
+
+                telefoneInput.addEventListener('input', function () {
+                    let telefone = this.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+                    if (telefone.length > 0) {
+                        telefone = telefone.replace(/^(\d{2})(\d)/g, '($1) $2');
+                        if (telefone.length > 11) {
+                            telefone = telefone.replace(/(\d{5})(\d)/, '$1-$2');
+                        } else {
+                            telefone = telefone.replace(/(\d{4})(\d)/, '$1-$2');
+                        }
+                        this.value = telefone.slice(0, 15); // Limita o tamanho máximo para o formato
+                    }
+                });
+
+                const celularInput = document.getElementById('celular');
+
+                celularInput.addEventListener('input', function () {
+                    let celular = this.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+                    if (celular.length > 0) {
+                        celular = celular.replace(/^(\d{2})(\d)/g, '($1) $2');
+                        if (celular.length > 11) {
+                            celular = celular.replace(/(\d{5})(\d)/, '$1-$2');
+                        } else {
+                            celular = celular.replace(/(\d{4})(\d)/, '$1-$2');
+                        }
+                        this.value = celular.slice(0, 15); // Limita o tamanho máximo para o formato
+                    }
+                });
+            </script>
 
             <script src="../Javascript/envioForm.js"></script>
 
