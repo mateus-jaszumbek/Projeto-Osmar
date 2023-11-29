@@ -93,3 +93,13 @@ body {
     border-radius: 5rem 0 5rem 0 ;
     margin: 0 3rem 0 3rem;
   }
+  .border-beneficios  p {
+    text-align: center;
+  }
+  .border-beneficios h4 {
+    text-align: center;
+    color: rgba(22, 141, 220, 0.775);
+  }
+  .border-beneficios lord-icon {
+    margin-left: 4rem;
+  }

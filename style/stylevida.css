@@ -86,14 +86,7 @@ body {
   .section-veja-mais {
     height: 110vh;
   }
-  .section-veja-mais h4 {
-    color: rgba(212, 21, 21, 0.775);
-    width: 70%;
 
-  }
-  .section-veja-mais p {
-    width: 60%;
-  }
   .border-beneficios {
     border: solid 4px red ;
     width: 25%;
@@ -101,6 +94,15 @@ body {
     border-radius: 5rem 0 5rem 0 ;
     margin: 0 3rem 0 3rem;
   }
-
+  .border-beneficios  p {
+    text-align: center;
+  }
+  .border-beneficios h4 {
+    text-align: center;
+    color: red;
+  }
+  .border-beneficios lord-icon {
+    margin-left: 4rem;
+  }
  
 
