@@ -351,7 +351,7 @@ body::-webkit-scrollbar-thumb {
 
 @media screen and (max-width: 989px) {
   .nav-bar {
-    height: 320vh;
+    height: 330vh;
     
   }
   .div-title {
