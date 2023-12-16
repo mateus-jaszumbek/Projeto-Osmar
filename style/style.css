@@ -348,3 +348,52 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   margin: 5px;
 }
+
+@media screen and (max-width: 989px) {
+  .nav-bar {
+    height: 320vh;
+    
+  }
+  .div-title {
+    width: 80%;
+    margin: 5rem auto 1rem auto;
+  }
+  .text-h2 {
+    text-align: center;
+    width: 70%;
+    margin: 1rem auto;
+  }
+  .cliqueaqui {
+    text-align: center;
+  }
+  .carro {
+    margin: 1rem auto;
+  }
+  .vida {
+    margin: 2rem auto;
+  }
+  .residencia {
+    margin: 2rem auto;
+  }
+  .primeiro-article {
+    height: 225vh;
+  }
+  .h3-cards-section {
+   margin: 5rem auto 3rem;
+  }
+  .sectionCard {
+    justify-content: center;
+    display: flex;
+  }
+  .div-section4 {
+    height: 200vh;
+  }
+  .div-section4 a {
+   margin-left: 9rem;
+  }
+  .div-footer {
+    height: 50vh;
+  }
+  /* Outros estilos para telas menores */
+}
+

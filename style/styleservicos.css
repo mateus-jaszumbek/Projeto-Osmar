@@ -188,3 +188,57 @@ input[type="submit"]:hover {
 .border-beneficios  p{
   text-align: center;
 }
+
+        /* Seções principais */
+        .imagem-banner-servico {
+          width: 100%;
+          height: auto; /* Em dispositivos móveis, ajuste a altura automaticamente */
+      }
+
+      .seguro-servico-principal,
+      .col-formulario {
+          background-color: #eaeaea;
+          padding: 20px;
+      }
+
+      /* Formulário */
+      form {
+          width: 100%; /* Ajuste para ocupar a largura total */
+          box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.933);
+          padding: 15px;
+          border-radius: 10px;
+          margin-top: 20px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="number"],
+      input[type="submit"] {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          font-size: 16px;
+      }
+
+      /* Seções de vantagens */
+      .coluna-verde-facilidade,
+      .coluna-segunda-verde-facilidade {
+          height: auto; /* Ajuste a altura conforme o conteúdo */
+          background-color: rgba(22, 103, 22, 0.775);
+          color: white;
+          padding: 20px;
+          margin-top: 20px;
+      }
+
+      /* Outros estilos para dispositivos móveis */
+      /* ... */
+
+      @media only screen and (max-width: 768px) {
+          /* Aplique estilos específicos para dispositivos com largura máxima de 768px */
+          /* ... */
+      }
+
+      /* Restante do seu CSS */
+      /* ... */
