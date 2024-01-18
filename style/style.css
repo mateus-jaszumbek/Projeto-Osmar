@@ -204,6 +204,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card-icone {
+  text-align: center;
   height: 20em;
   border: 2px solid white;
   margin-top: 8em;
@@ -349,51 +350,136 @@ body::-webkit-scrollbar-thumb {
   margin: 5px;
 }
 
-@media screen and (max-width: 989px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.nav-bar {
+  height: auto;
+}
+
+.nav-bar img{
+  width: 100px;
+  height: 100px;
+}
+.nav-bar li {
+    font-size: 65%;
+}
+.div-title {
+  font-size: 90%;
+  width: 80%;
+  margin: 25% auto 4% auto;
+}
+.text-h2, .cliqueaqui {
+  font-size: 90%;
+  text-align: center;
+}
+.card-primeiro {
+  width: 50%;
+  margin: 1rem auto ;
+  height: 17rem;
+  
+}
+.card-primeiro p {
+  font-size: 13px;
+  width: 80%;
+  margin: auto;
+}
+.primeiro-article {
+  height: 195vh;
+}
+.card1 {
+  width: 60%;
+  margin: 10% auto 2% auto;
+}
+.div-section4 {
+  height:auto;
+}
+.h1-section4 {
+  text-align: center;
+  font-size: 35%;
+}
+.card-icone {
+  text-align: center;
+  width: 60%;  
+  margin: 5% auto 5% auto;
+}
+.div-footer {
+  height: auto;
+}
+.espacamento-footer {
+  height: auto;
+}
+}
+
+@media screen and (min-width: 481px) and (max-width: 991px) {
   .nav-bar {
-    height: 330vh;
-    
+    height: auto;
   }
   .div-title {
     width: 80%;
-    margin: 5rem auto 1rem auto;
+    margin: 25% auto 4% auto;
   }
-  .text-h2 {
-    text-align: center;
-    width: 70%;
-    margin: 1rem auto;
-  }
-  .cliqueaqui {
+  .text-h2, .cliqueaqui {
+    font-size: 90%;
     text-align: center;
   }
-  .carro {
-    margin: 1rem auto;
+  .card-primeiro {
+    width: 50%;
+    margin: 1rem auto ;
+    height: 28rem;    
   }
-  .vida {
-    margin: 2rem auto;
+  .card-primeiro p {
+    font-size: 2rem;
+    width: 80%;
+    margin: auto;
   }
-  .residencia {
-    margin: 2rem auto;
+  .card1 {
+    width: 60%;
+    margin: 10% auto 2% auto;
   }
   .primeiro-article {
-    height: 225vh;
-  }
-  .h3-cards-section {
-   margin: 5rem auto 3rem;
-  }
-  .sectionCard {
-    justify-content: center;
-    display: flex;
+    height: auto;
   }
   .div-section4 {
-    height: 200vh;
-  }
-  .div-section4 a {
-   margin-left: 9rem;
+    height: auto;
   }
   .div-footer {
-    height: 50vh;
+    height: auto;
   }
-  /* Outros estilos para telas menores */
+  .card-icone {
+    text-align: center;
+    width: 60%;  
+    margin: 5% auto 5% auto;
+  }
 }
+
+@media screen and (min-width: 992px) and (max-width: 1192px) {
+  .text-h2 {
+    margin-top: 9rem;
+    font-size: 2rem;
+  }
+  .card-primeiro {
+    width: 90%;
+    float: right;
+    height: 25rem;
+  }
+  .cliqueaqui {
+    font-size: 1.4rem;
+  }
+  .card-primeiro p {
+    font-size: 1.4rem;
+  }
+  .card-icone {
+    text-align: center;
+  }
+  .div-footer {
+    height: auto;
+  }
+
+}
+
 
