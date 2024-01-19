@@ -8,7 +8,7 @@ body {
   border-bottom: 1px solid #ddd;
   padding: 10px 0;
   height: 5rem;
-  position: fixed;
+
   top: 0;
   width: 100%;
   z-index: 9999;
@@ -51,6 +51,7 @@ body {
 }
 
 .section-imagem {
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -73,18 +74,10 @@ body {
   /* Espaçamento interno para o texto */
 }
 
-.conheca {
-  font-size: 1.3em;
-  /* Tamanho do parágrafo */
-  font-weight: bolder;
-  margin-top: 4.6rem;
-  justify-content: center;
-}
-
 .title {
   font-size: 5rem;
   width: 50%;
-  margin: 6rem auto 3rem;
+  margin: 15rem auto 3rem;
   font-weight: bolder;
 }
 
@@ -128,8 +121,8 @@ body {
 
 .border-section-conheca {
   border: solid 2px rgba(11, 206, 11, 0.822);
-  width: 80vh;
-  height: 20vh;
+  width: 70%;
+  height: auto;
   margin: auto;
   margin-top: 2.4rem;
   box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.63);
@@ -145,9 +138,10 @@ body {
 
 .border-section-conheca a {
   font-weight: bolder;
-  display: flex;
-  margin-top: 8vh;
-  margin-left: 19vh;
+  width: 70%;
+  margin: 23% auto;
+  float: right;
+  display: block;
   color: rgba(11, 206, 11, 0.822);
   text-decoration: none;
 }
@@ -157,17 +151,18 @@ body {
 }
 
 .section-imagem-quemsomos {
-  height: 90vh;
+  height: auto;
   width: 100%;
   background-color: #f0f0f0;
 }
 
 .section-imagem-quemsomos img {
-  height: 90vh;
+  height: 105vh;
   width: 103%;
 }
 
 .seguro-nossa {
+  text-align: center;
   font-weight: bolder;
   font-size: 2.4rem;
   margin: 5rem 8rem;
@@ -187,7 +182,7 @@ body {
 .bottozinho {
   border: solid 1px black;
   width: 24%;
-  margin: 10% 15%;
+  margin: 10% auto 15%;
   text-align: center;
   padding: 2%;
   font-size: 1.2rem;
@@ -197,4 +192,124 @@ body {
 
 .bottozinho:hover {
   background-color: rgba(22, 224, 157, 0.781);
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+ .navbar img {
+    width: 50px;
+    height: 50px;
+ }
+ .navbar  {
+  font-size: 10px;
+}
+.section-imagem {
+  height: auto;
+  width: 100%;
+}
+.title {
+  font-size: 2rem;
+  width: 90%;
+  margin: 20%  auto 9% auto;
+}
+.veja {
+  width: 90%;
+}
+.nossos {
+  width: 90%;
+  margin: 15% auto 5% auto;
+  font-size:  2.7rem;
+}
+.section-saibamais {
+  height: auto;
+}
+.section-saibamais a {
+  width: 40%;
+  font-size: 12px;  
+  margin: 0 auto;
+  }
+.section-saibamais p {
+  width: 30%;
+  font-size: 1rem;
+}
+.section-imagem-quemsomos {
+ margin-top: 3rem;
+}
+.seguro-nossa {
+  width: 80%;
+  margin: auto;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.quem-e-brs {
+  width: 90%;
+  margin: 2rem auto;
+  font-size: 15px;
+}
+.lorem-lorem {
+  font-size: 10px;
+}
+.bottozinho {
+  width: 40%;
+}
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 991px) {
+
+  .navbar img {
+    width: 60px;
+    height: 60px;
+ }
+ .navbar  {
+  font-size: 10px;
+}
+.section-imagem {
+  height: auto;
+  width: 100%;
+}
+.title {
+  font-size: 2rem;
+  width: 90%;
+  margin: 20%  auto 9% auto;
+}
+.veja {
+  width: 90%;
+}
+.nossos {
+  width: 90%;
+  margin: 15% auto 5% auto;
+  font-size:  2.7rem;
+}
+.section-saibamais {
+  height: auto;
+}
+.section-saibamais a {
+  width: 40%;
+  font-size: 12px;  
+  margin: 0 auto;
+  }
+.section-saibamais p {
+  width: 30%;
+  font-size: 1rem;
+}
+.section-imagem-quemsomos {
+ margin-top: 3rem;
+}
+.seguro-nossa {
+  width: 80%;
+  margin: auto;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.quem-e-brs {
+  width: 90%;
+  margin: 2rem auto;
+  font-size: 15px;
+}
+.lorem-lorem {
+  font-size: 10px;
+}
+.bottozinho {
+  width: 40%;
+}
 }
